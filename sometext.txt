@@ -1,0 +1,227 @@
+.logo {
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+}
+.header {
+  /* background-color: cornsilk; */
+  /* border-bottom: 3px solid black; */
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 33px;
+}
+/* .navlinks{
+  display:none; 
+}
+.showNavlinks{
+  display:block;
+} */
+.navlink {
+  margin-right: 30px;
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  color: #9597a5;
+  text-decoration: none;
+}
+.navlink:last-child {
+  margin: 0;
+}
+.navButton {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  border: none;
+  width: 163px;
+  height: 44px;
+  padding: 0;
+  background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+  transition: all 0.2s ease-in-out;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.navButton:hover {
+  background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+  font-weight: normal;
+  opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+}
+
+.navlink:hover,
+.navlink:focus {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  color: #2d314d;
+  text-decoration: none;
+
+  padding-bottom: 32px;
+  border-bottom: 4px solid #00ffa6;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 22px 24px;
+    margin: 0;
+    height: 64px;
+    border: none;
+  }
+  .hamburger {
+    display: block;
+    margin: 0 0 0 auto;
+    background: none;
+    border: none;
+  }
+
+  .logo {
+    width: 139px;
+    height: 20px;
+  }
+  
+  .navlinks {
+    display:none;
+  }
+  /* .navlinks {
+    background-color: #9597a5;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 88px;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    padding: 32px 0;
+    display:none;
+  }
+  .showNavlinks{
+    display: block;
+  }
+  .removeNavlinks{
+  display:none;
+}
+
+  .navlink {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.138462px;
+    color: #2d314d;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: 0 0 24px 0;
+  }
+  .navlink:last-child {
+    margin: 0;
+  }
+
+  .navlink:hover,
+  .navlink:focus {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.138462px;
+    color: #2d314d;
+    border-bottom: none;
+    padding-bottom: 0;
+  } */
+  .navButton {
+    display: none;
+  }
+}
+
+
+
+/*
+    <div>
+      <nav className='navbar'>
+        <Link exact to='/'>
+          <img src={logo} className='logo' alt='logo' />
+        </Link>
+        <NavLinks />
+        <MobileNavlinks/>
+         <div className='navlinks'>
+          <Link exact to='/' className='navlink'>
+            Home
+          </Link>
+          <Link to='/about' className='navlink'>
+            About
+          </Link>
+          <Link to='/blog' className='navlink'>
+            Blog
+          </Link>
+          <Link to='/careers' className='navlink'>
+            Careers
+          </Link>
+          <Link to='/contact' className='navlink'>
+            Contact
+          </Link>
+        </div> 
+        <Link to='/request-invite'>
+          <button className='navButton'>Request Invite</button>
+        </Link>
+
+       <div className='hamburger' onClick={handleClick}>
+          {clicked ? closeBtn: hamburgerMenu}
+        </div> 
+      </nav>
+    </div>
+*/ 
+
+
+
+import React, { useState}from "react";
+import "./Navbar.css";
+import { MenuItems } from "./Menuitems";
+
+const Navbar = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  }
+  return (
+    <>
+      <nav className='NavbarItems'>
+        <h1 className='navbar-logo'>
+          React <i className='fab fa-react'></i>
+        </h1>
+        <div className='menu-icon' onclick={handleClick}>
+          <i className={clicked ? "fas fa-times" : "fas fa-times"}></i>
+        </div>
+        <ul>
+          {MenuItems.map((item, id) => {
+            return (
+              <li key={id}>
+                <a className={item.cName} href={item.url}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </>
+  );
+};
+
+export default Navbar;
