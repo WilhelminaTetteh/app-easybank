@@ -1,33 +1,27 @@
 export const MenuItems = [
- 
   {
     id: 1,
-    title: 'Home',
-    url: '#',
-    cName:'nav-links',
+    title: "Home",
+    to: "/",
+    cName: "navlink",
+    exact: "exact",
   },
   {
     id: 2,
-    title: 'Services',
-    url: '#',
-    cName:'nav-links',
+    title: "Services",
+    to: "#",
+    cName: "navlink",
   },
   {
     id: 3,
-    title: 'Products',
-    url: '#',
-    cName:'nav-links'
+    title: "Products",
+    to: "#",
+    cName: "navlink",
   },
   {
     id: 4,
-    title: 'Contact',
-    url: '#',
-    cName:'nav-links'
+    title: "Contact",
+    to: "#",
+    cName: "navlink",
   },
-  {
-     id: 5,
-    title: 'Sign up',
-    url: '#',
-    cName:'nav-links-mobile'
-  },
-]
+];

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from '../../images/logo.svg';
 
 const Navbar = () => {
-  const [clicked, setClicked] = useState(true);
+  const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link exact='true' to='/'>
           <img src={logo} className='logo' alt='logo' />
         </Link>
-        <div className={clicked ? "navlinks" : "navlinks removeNavlinks"}>
+        <div className={clicked ? "showNavlinks" : "removeNavlinks"}>
           <Link exact='true' to='/' className='navlink'>
             Home
           </Link>
