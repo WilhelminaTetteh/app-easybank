@@ -90,7 +90,7 @@
     display:none;
   }
   .showNavlinks {
-    background: linear-gradient(135deg, #33d35e8e 0%, #2ab6d9bb 99.58%);
+    background: #FFFFFF;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -100,7 +100,7 @@
     text-align: center;
     padding: 32px 0;
     border-radius: 2px;
-    /* display: none; */
+    z-index: 6;
   }
 
   .removeNavlinks {
