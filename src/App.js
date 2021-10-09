@@ -8,7 +8,9 @@ import Contact from "./pages/Contact";
 import RequestInvite from "./pages/RequestInvite";
 function App() {
   return (
-    <BrowserRouter>
+    <div className="page__container" style={{maxWidth: "1440px",
+    margin: "0 auto"}}>
+     <BrowserRouter>
       <Navbar />
       <Switch>
         <Route path='/' exact>
@@ -31,6 +33,8 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
+    </div>
+   
   );
 }
 

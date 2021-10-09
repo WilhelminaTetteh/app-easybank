@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 33px;
+  width: 100%;
+  border: none;
 }
 
 .navlink {
@@ -87,10 +89,10 @@
   }
 
   .navlinks {
-    display:none;
+    display: none;
   }
   .showNavlinks {
-    background: #FFFFFF;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -106,7 +108,7 @@
   .removeNavlinks {
     display: none;
   }
- 
+
   .navlink {
     font-style: normal;
     font-weight: normal;
