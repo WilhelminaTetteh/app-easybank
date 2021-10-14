@@ -82,7 +82,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div>
+      <div className="footer__request">
         <Button />
         <p className="footer__copyright">© Easybank. All Rights Reserved</p>
       </div>
