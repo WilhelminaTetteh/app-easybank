@@ -98,7 +98,10 @@
 }
 @media screen and (max-width: 520px) {
   .footer__logo {
+    width: 139px;
+    height: 20px;
     margin-bottom: 32px;
+    margin-left: 16px;
   }
   .footer__icons {
     margin-bottom: 32px;

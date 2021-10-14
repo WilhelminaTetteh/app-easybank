@@ -32,6 +32,7 @@ const Navbar = () => {
             Careers
           </Link>
         </div>
+
         <Link to="/request-invite">
           <button className="navButton">Request Invite</button>
         </Link>

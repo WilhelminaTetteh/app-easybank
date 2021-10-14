@@ -88,9 +88,9 @@
     height: 20px;
   }
 
-  .navlinks {
+  /* .navlinks {
     display: none;
-  }
+  } */
   .showNavlinks {
     background: #ffffff;
     display: flex;
@@ -271,5 +271,5 @@
     color: #6568f4;
     transition: 250ms;
   }
-  
+
 } */
