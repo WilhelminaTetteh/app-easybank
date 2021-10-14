@@ -15,45 +15,28 @@ const Footer = () => {
         <div className="footer__socials">
           <img src={logo} className="footer__logo" alt="logo-footer" />
           <div className="footer__icons">
-            <a
-              href="https://facebook.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="footer__icon"
-            >
-              <img src={facebook} alt="icon" />
+            <a href="https://facebook.com/" target="_blank" rel="noreferrer">
+              <img src={facebook} alt="icon" className="footer__icon" />
             </a>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="footer__icon"
-            >
-              <img src={youtube} alt="icon" />
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+              <img src={youtube} alt="icon" className="footer__icon" />
             </a>
-            <a
-              href="https://www.twitter.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="footer__icon"
-            >
-              <img src={twitter} alt="icon" />
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
+              <img src={twitter} alt="icon" className="footer__icon" />
             </a>
             <a
               href="https://www.pinterest.com/"
               target="_blank"
               rel="noreferrer"
-              className="footer__icon"
             >
-              <img src={pinterest} alt="icon" />
+              <img src={pinterest} alt="icon" className="footer__icon" />
             </a>
             <a
               href="https://www.instagram.com/"
               target="_blank"
               rel="noreferrer"
-              className="footer__icon"
             >
-              <img src={instagram} alt="icon" />
+              <img src={instagram} alt="icon" className="footer__icon" />
             </a>
           </div>
         </div>
