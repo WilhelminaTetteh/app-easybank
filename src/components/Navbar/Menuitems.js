@@ -8,19 +8,25 @@ export const MenuItems = [
   },
   {
     id: 2,
-    title: "Services",
+    title: "About",
     to: "#",
     cName: "navlink",
   },
   {
     id: 3,
-    title: "Products",
+    title: "Contact",
     to: "#",
     cName: "navlink",
   },
   {
     id: 4,
-    title: "Contact",
+    title: "Blog",
+    to: "#",
+    cName: "navlink",
+  },
+  {
+    id: 5,
+    title: "Careers",
     to: "#",
     cName: "navlink",
   },
