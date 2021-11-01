@@ -68,9 +68,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://mobile.twitter.com/with_mina)
+- Twitter - [@with_mina](https://mobile.twitter.com/with_mina)
 
 
